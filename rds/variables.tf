@@ -47,6 +47,7 @@ variable "rds_name"{
     default="master_rds"
 }
 
+/*
 variable "db_name" {
    default = "dashboard"
 }
@@ -58,7 +59,7 @@ variable "master_user_name"{
 variable "master_user_password" {
     default = "test123!"
 }
-
+*/
 variable "database_character" {
     default = "utf8"
 }
