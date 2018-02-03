@@ -1,11 +1,11 @@
 # access_key
 variable "access_key"{
-    #default = ""
+    default = ""
 }
 
 # secret_key
 variable "secret_key"{
-    #default = ""
+    default = ""
 }
 
 variable "region"{
@@ -40,7 +40,7 @@ variable "db_instance_net_type" {
 } 
 
 variable "instance_charge_type"{
-    default = "Prepaid"   #Default is Postpaid 
+    default = "Postpaid"   #Default is Postpaid 
 }
 
 variable "rds_name"{
