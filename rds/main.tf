@@ -35,8 +35,8 @@ resource "alicloud_db_instance" "rds_instance" {
     #master_user_name = "${var.master_user_name}"
     #alicloud_db_account = "${var.master_user_password}"
     #alicloud_db_backup_policy = "7"   # Default is 7 days but can be set to 730 days
-    instance_network_type = "VPC" #default is classic network
-    allocate_public_connection = "false" #default intranet
+    instance_network_type = "${var.net_instance_type}" #default is classic network
+    allocate_public_connection = "${var.public_ip}" #default intranet
     security_ips = ["192.168.0.0/16"]
     vswitch_id = "${alicloud_vswitch.custom-rds-vsw.id}"
   

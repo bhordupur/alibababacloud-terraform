@@ -44,9 +44,16 @@ variable "instance_charge_type"{
 }
 
 variable "rds_name"{
-    default="master_rds"
+    default = "master_rds"
 }
 
+variable "net_instance_type"{
+    default = "VPC"
+}
+
+variable "public_ip"{
+    default = "false"
+}
 /*
 variable "db_name" {
    default = "dashboard"
