@@ -3,11 +3,18 @@
 
 Run from the terminal `terraform init` in order to initialise the configuration file
 
-Run from the terminal
+Run from the terminal:
+
+**Plan:** 
 
 `terraform plan -var 'access_key=your access key here' -var 'secret_key=your secret key here'`
 
 Once terraform plan runs successfully 
-Run from the terminal 
+
+**Apply:**
 
 `terraform apply -var 'access_key=your access key here' -var 'secret_key=your secret key here'`
+
+**Destroy:**
+
+`terraform destroy -var 'access_key=your access key here' -var 'secret_key=your secret key here'`
