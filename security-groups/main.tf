@@ -53,7 +53,7 @@ resource "alicloud_security_group_rule" "https-in" {
 }
 
 
-#create a VPC called  bolddk-vpc
+#create a VPC called  custom-vpc
 resource "alicloud_vpc" "vpc" {
   name       = "custom-vpc"
   cidr_block = "192.168.0.0/16"
